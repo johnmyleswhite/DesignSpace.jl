@@ -1,27 +1,10 @@
 immutable NullableArray{T, N} <: AbstractArray{Nullable{T}, N}
     values::Array{T, N}
     isnull::Array{Bool, N}
-
-    function NullableArray(d::AbstractArray{T, N}, m::Array{Bool, N})
-        if size(d) != size(m)
-            msg = "values and missingness arrays must be the same size"
-            throw(ArgumentError(msg))
-        end
-        new(d, m)
-    end
-end
-
-function NullableArray{T, N}(A::AbstractArray{T, N}, m::Array{Bool, N}) # -> NullableArray
-    return NullableArray{T, N}(A, m)
 end
 
 Base.size(X::NullableArray) = size(X.values) # -> NTuple{Int}
 
-import Base: LinearFast
-
-Base.linearindexing{T <: NullableArray}(::Type{T}) = LinearFast()
-
-# Extract a scalar element from a `NullableArray`.
 @inline function Base.getindex{T, N}(X::NullableArray{T, N}, I::Int...)
     if X.isnull[I...]
         Nullable{T}()
