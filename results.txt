@@ -1,0 +1,152 @@
+ 204.776 milliseconds (19999 k allocations: 458 MB, 14.83% gc time)
+   9.860 milliseconds
+  10.853 milliseconds
+ 196.246 milliseconds (19999 k allocations: 458 MB, 8.73% gc time)
+ 367.408 milliseconds (39999 k allocations: 916 MB, 8.69% gc time)
+ 382.433 milliseconds (39999 k allocations: 916 MB, 8.53% gc time)
+  14.515 milliseconds
+  18.811 milliseconds
+   4.986 milliseconds
+
+v1,no,no,no,sum,39.271661
+v1,no,no,no,split_sum,2.272057
+v1,no,no,no,split_sum_2,2.048356
+v1,no,no,no,loop_sum,36.653878
+v1,no,no,no,unwrap_sum,77.024292
+v1,no,no,no,branchfree_sum,99.728099
+v1,no,no,no,split_loop_sum,4.744256
+v1,no,no,no,simd_sum,6.183281
+
+ 296.795 milliseconds (19999 k allocations: 458 MB, 11.24% gc time)
+   5.442 milliseconds
+   5.104 milliseconds
+ 255.131 milliseconds (19999 k allocations: 458 MB, 6.86% gc time)
+ 524.500 milliseconds (39999 k allocations: 916 MB, 7.34% gc time)
+ 521.545 milliseconds (39999 k allocations: 916 MB, 6.94% gc time)
+  15.217 milliseconds
+  67.825 milliseconds
+   5.715 milliseconds
+
+v2,no,no,yes,sum,49.617594
+v2,no,no,yes,split_sum,1.004655
+v2,no,no,yes,split_sum_2,1.025923
+v2,no,no,yes,loop_sum,44.757257
+v2,no,no,yes,unwrap_sum,95.560338
+v2,no,no,yes,branchfree_sum,89.362575
+v2,no,no,yes,split_loop_sum,2.209547
+v2,no,no,yes,simd_sum,12.340715
+
+ 593.671 milliseconds (39967 k allocations: 1067 MB, 9.80% gc time)
+  11.207 milliseconds
+   9.718 milliseconds
+ 470.105 milliseconds (29999 k allocations: 763 MB, 6.46% gc time)
+ 361.019 milliseconds (39999 k allocations: 916 MB, 9.89% gc time)
+ 397.002 milliseconds (39999 k allocations: 916 MB, 9.13% gc time)
+  14.874 milliseconds
+  20.983 milliseconds
+   6.650 milliseconds
+
+v3,no,yes,no,sum,98.122948
+v3,no,yes,no,split_sum,1.902113
+v3,no,yes,no,split_sum_2,2.054962
+v3,no,yes,no,loop_sum,80.966203
+v3,no,yes,no,unwrap_sum,66.585158
+v3,no,yes,no,branchfree_sum,67.463177
+v3,no,yes,no,split_loop_sum,3.274335
+v3,no,yes,no,simd_sum,3.858697
+
+ 693.912 milliseconds (39967 k allocations: 1067 MB, 9.87% gc time)
+   5.191 milliseconds
+   5.547 milliseconds
+ 586.766 milliseconds (29999 k allocations: 763 MB, 5.69% gc time)
+ 502.352 milliseconds (39999 k allocations: 916 MB, 7.89% gc time)
+ 487.542 milliseconds (39999 k allocations: 916 MB, 7.33% gc time)
+  11.337 milliseconds
+  68.239 milliseconds
+   5.153 milliseconds
+
+v4,no,yes,yes,sum,119.040167
+v4,no,yes,yes,split_sum,1.116682
+v4,no,yes,yes,split_sum_2,1.109839
+v4,no,yes,yes,loop_sum,104.569061
+v4,no,yes,yes,unwrap_sum,94.455039
+v4,no,yes,yes,branchfree_sum,97.433099
+v4,no,yes,yes,split_loop_sum,2.299366
+v4,no,yes,yes,simd_sum,12.837100
+
+  18.206 milliseconds
+  10.460 milliseconds
+  11.549 milliseconds
+  21.994 milliseconds
+  29.498 milliseconds
+  24.200 milliseconds
+  16.819 milliseconds
+  21.950 milliseconds
+   5.893 milliseconds
+
+v5,yes,no,no,sum,2.654289
+v5,yes,no,no,split_sum,2.031322
+v5,yes,no,no,split_sum_2,1.890635
+v5,yes,no,no,loop_sum,3.230526
+v5,yes,no,no,unwrap_sum,4.589326
+v5,yes,no,no,branchfree_sum,4.488285
+v5,yes,no,no,split_loop_sum,2.764362
+v5,yes,no,no,simd_sum,3.110915
+
+  68.860 milliseconds
+   5.678 milliseconds
+   5.736 milliseconds
+  67.103 milliseconds
+ 128.955 milliseconds
+ 128.983 milliseconds
+  11.460 milliseconds
+  71.277 milliseconds
+   7.025 milliseconds
+
+v6,yes,no,yes,sum,16.276324
+v6,yes,no,yes,split_sum,1.051395
+v6,yes,no,yes,split_sum_2,1.054375
+v6,yes,no,yes,loop_sum,13.151271
+v6,yes,no,yes,unwrap_sum,23.543895
+v6,yes,no,yes,branchfree_sum,23.965078
+v6,yes,no,yes,split_loop_sum,2.542263
+v6,yes,no,yes,simd_sum,12.316854
+
+ 394.203 milliseconds (19967 k allocations: 609 MB, 8.62% gc time)
+   9.763 milliseconds
+  10.378 milliseconds
+ 360.081 milliseconds (20000 k allocations: 610 MB, 5.39% gc time)
+  29.331 milliseconds
+  24.439 milliseconds
+  16.018 milliseconds
+  18.451 milliseconds
+   5.453 milliseconds
+
+v7,yes,yes,no,sum,74.711513
+v7,yes,yes,no,split_sum,1.947574
+v7,yes,yes,no,split_sum_2,2.140854
+v7,yes,yes,no,loop_sum,84.862367
+v7,yes,yes,no,unwrap_sum,7.138808
+v7,yes,yes,no,branchfree_sum,5.660711
+v7,yes,yes,no,split_loop_sum,3.333640
+v7,yes,yes,no,simd_sum,4.267111
+
+ 475.667 milliseconds (19967 k allocations: 609 MB, 7.96% gc time)
+   6.101 milliseconds
+   5.228 milliseconds
+ 402.001 milliseconds (20000 k allocations: 610 MB, 4.34% gc time)
+ 122.666 milliseconds
+ 120.722 milliseconds
+  10.063 milliseconds
+  67.076 milliseconds
+   6.090 milliseconds
+
+v8,yes,yes,yes,sum,60.757972
+v8,yes,yes,yes,split_sum,0.782277
+v8,yes,yes,yes,split_sum_2,0.744552
+v8,yes,yes,yes,loop_sum,60.984348
+v8,yes,yes,yes,unwrap_sum,18.179335
+v8,yes,yes,yes,branchfree_sum,18.143268
+v8,yes,yes,yes,split_loop_sum,1.706990
+v8,yes,yes,yes,simd_sum,10.236698
+
